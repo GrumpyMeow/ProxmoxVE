@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -fsSL https://raw.githubusercontent.com/GrumpyMeow/ProxmoxVE/main/misc/build.func)
+source <(curl -fsSL https://raw.githubusercontent.com/GrumpyMeow/ProxmoxVE/refs/heads/feature/misc/build.func)
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: [YourGitHubUsername]
 # License: MIT | https://github.com/GrumpyMeow/ProxmoxVE/raw/main/LICENSE
