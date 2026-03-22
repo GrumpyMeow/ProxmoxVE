@@ -12,16 +12,16 @@ source <(curl -fsSL https://raw.githubusercontent.com/GrumpyMeow/ProxmoxVE/main/
 # Users can customize these during installation via the interactive prompts.
 # ============================================================================
 
-APP="[AppName]"
-var_tags="${var_tags:-[category1];[category2]}" # Max 2 tags, semicolon-separated
+APP="kdedesktop"
+var_tags="" # Max 2 tags, semicolon-separated
 var_cpu="${var_cpu:-2}"                         # CPU cores: 1-4 typical
 var_ram="${var_ram:-2048}"                      # RAM in MB: 512, 1024, 2048, etc.
 var_disk="${var_disk:-8}"                       # Disk in GB: 6, 8, 10, 20 typical
 var_os="${var_os:-debian}"                      # OS: debian, ubuntu, alpine
 var_version="${var_version:-13}"                # OS Version: 13 (Debian), 24.04 (Ubuntu), 3.21 (Alpine)
 var_unprivileged="${var_unprivileged:-0}"       # 1=unprivileged (secure), 0=privileged (for Docker/Podman)
-var_user="kde"
-var_password="desktop"
+var_ssh="${var_ssh:-yes}"
+var_gpu="${var_gpu:-yes}"
 
 # ============================================================================
 # INITIALIZATION - These are required in all CT scripts
