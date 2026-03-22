@@ -83,16 +83,16 @@ variables() {
   fi
 }
 
-source <(curl -fsSL https://raw.githubusercontent.com/GrumpyMeow/ProxmoxVE/main/misc/api.func)
+source <(curl -fsSL https://raw.githubusercontent.com/GrumpyMeow/ProxmoxVE/refs/heads/feature/kde-desktop/misc/api.func)
 
 if command -v curl >/dev/null 2>&1; then
-  source <(curl -fsSL https://raw.githubusercontent.com/GrumpyMeow/ProxmoxVE/main/misc/core.func)
-  source <(curl -fsSL https://raw.githubusercontent.com/GrumpyMeow/ProxmoxVE/main/misc/error_handler.func)
+  source <(curl -fsSL https://raw.githubusercontent.com/GrumpyMeow/ProxmoxVE/refs/heads/feature/kde-desktop/misc/core.func)
+  source <(curl -fsSL https://raw.githubusercontent.com/GrumpyMeow/ProxmoxVE/refs/heads/feature/kde-desktop/misc/error_handler.func)
   load_functions
   catch_errors
 elif command -v wget >/dev/null 2>&1; then
-  source <(wget -qO- https://raw.githubusercontent.com/GrumpyMeow/ProxmoxVE/main/misc/core.func)
-  source <(wget -qO- https://raw.githubusercontent.com/GrumpyMeow/ProxmoxVE/main/misc/error_handler.func)
+  source <(wget -qO- https://raw.githubusercontent.com/GrumpyMeow/ProxmoxVE/refs/heads/feature/kde-desktop/misc/core.func)
+  source <(wget -qO- https://raw.githubusercontent.com/GrumpyMeow/ProxmoxVE/refs/heads/feature/kde-desktop/misc/error_handler.func)
   load_functions
   catch_errors
 fi
